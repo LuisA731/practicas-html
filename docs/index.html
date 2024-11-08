@@ -1,164 +1,271 @@
-<!DOCTYPE html>
-<html lang="Es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Boys</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <link rel="stylesheet" href="./styles.css" />
-    <link rel="icon" href="./assets/vought-logo.png" />    
-</head>
-<body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="https://about.readthedocs.com/theme/img/logo-wordmark-dark.svg" alt="logo pagina " height="24" width="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">login</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div class="container">
+          <p class="text-center my-5">Sitio analizado: <a href="https://about.readthedocs.com/?ref=readthedocs.org" target="_blank">
+            https://about.readthedocs.com/?ref=readthedocs.org</a>
+          </p>       
+        </div>   
+<main>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">The Boys</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="The Boys" href="#inicio">Inicio</a>
-          <a class="nav-link" href="#info">Info importante</a>
-          <a class="nav-link" href="#sin">Sinopsis</a>
-          <a class="nav-link" href="#temp">Temporadas y Capitulos</a>
-          <a class="nav-link" href="#tabla">Personajes</a>
-          <a class="nav-link" href="#red">Redes Sociales</a>
-          <a class="bi-radioactive" href="#cap"></a>
-        </div>
-      </div>
-    </div>
-  </nav>  
+  <div class="container">
+    <section class="row">
+      <article class="border col-6">
+        <h3> Documentation simplified</h3>
+        <p>Build, host, and share documentation, all with a single platform.</p>
+        <button type="button" class="btn btn-info">Sign up now</button>
+      </article>
+      <article class="border col-6 d-none d-lg-block d-xl-block ">
+        <img src="https://about.readthedocs.com/images/homepage.png" class="img-fluid" alt="github" >
+      </article>
+    </section>
+  </div>
 
-  <div class="container-xxl mt-4 p-3  text-center border border-light" id="inicio">
-    <div class="row align-items-center">
-      <div class="col-lg-6 col-md-6 m-3">
-        <h1>The Boys</h1>
-        <p class="bg-info text-white m-5">
-          La serie The Boys se estrenó el 26 de julio de 2019 en la plataforma de Amazon Prime Video. Es una producción estadounidense que se originó en Estados Unidos.
-          The Boys está basada en una serie de cómics del mismo nombre, creada por Garth Ennis y Darick Robertson, publicada por primera vez en 2006.
-          La adaptación para la televisión fue desarrollada por Eric Kripke, conocido por ser el creador de la serie Supernatural.
+  <div class="container">
+    <section class="row">
+      <article class="border col-12 col-lg-4 text-white" style="background-color: grey;">
+        <h4>Automatic deploy previews </h4>
+        <P>Preview your documentation on every pull request. Never guess what you're shipping again.</P>
+      </article>
+      <article class="border col-12 col-lg-4 text-white" style="background-color: black;">
+        <h4>Ideal developer experience </h4>
+        <P>Write documentation with Git and your favorite text editor. Developers and writers both love docs as code.</P>
+      </article>
+      <article class="border col-12 col-lg-4 text-white" style="background-color: purple;">
+        <h4>Work privately or publicly </h4>
+        <P>Share content with just your team, or with the whole world. Sync permissions from GitHub, or manage custom permissions for your projects.</P>
+      </article>
+    </section>
+  </div>
+
+  <div class="container">
+    <section class="row">
+      <article class="border text-center">
+        <h3>Trusted by businesses worldwide since 2010</h3>
+      </article>
+      <article class="border col-12 col-lg-3">
+       <img src="https://about.readthedocs.com/images/amd-logo.svg"  height="40" width="auto" alt="">
+      </article>
+       <article class="border col-12 col-lg-3">
+       <img src="https://about.readthedocs.com/images/canonical-logo.svg"  height="40" width="auto" alt="">
+      </article>
+       <article class="border col-12 col-lg-3">
+       <img src="https://about.readthedocs.com/images/anaconda-logo.svg"  height="40" width="auto" alt="">
+      </article>
+       <article class="border col-12 col-lg-3 ">
+       <img src="https://about.readthedocs.com/images/acquia-logo.svg"  height="40" width="auto" alt="">
+      </article>
+    </section>   
+  </div>
+
+  <div class="container">
+    <section class="row">
+      <article class="border">
+        <h4>Features</h4>
+      </article>
+      <artticle class="border col-12 col-lg-4">
+        <h5>Supports any doc tool</h5>
+        <p>Integrated support for Sphinx, MkDocs, Jupyter Book. Flexible enough to work with any documentation tool.</p>
+      </artticle>
+      <artticle class="border col-12 col-lg-4">
+        <h5>Integrated search</h5>
+        <p>Easily search all your docs via our dashboard, and offer your users a more powerful search with our search API.</p>
+      </artticle>
+      <artticle class="border col-12 col-lg-4">
+        <h5>Pull request previews</h5>
+        <p>Preview each pull request before releasing any changes, allowing for fast collaboration across your organization.</p>
+      </artticle>
+      <artticle class="border col-12 col-lg-4">
+        <h5>Versioned docs</h5>
+        <p>Match your product release cycle with multiple versions of your docs. Automatically build versions from any branch or tag.</p>
+      </artticle>
+      <artticle class="border col-12 col-lg-4">
+        <h5>Private repository support</h5>
+        <p>Clone private repositories using a connected GitHub, GitLab, or Bitbucket account, or clone from any Git provider with an SSH key..</p>
+      </artticle>
+      <artticle class="border col-12 col-lg-4">
+        <h5>Single-Sign On</h5>
+        <p>Control who has access to your documentation with integrated authentication. Enable SSO with GitHub or GitLab to easily manage permissions in one place..</p>
+      </artticle>
+      <article class="border text-center ">
+        <button type="button" class="btn btn-primary">Discover all our features 🌟</button>
+      </article>
+    </section>
+  </div>
+
+ <div class="container">
+  <section class="row">
+    <article class="border col-12 text-center">
+      <h3>Upgrade your documentation with Read the Docs</h3>
+    </article>
+    <article class="border col-12 col-lg-6">
+      <img src="https://imgs.search.brave.com/Z_vV5kQcybCJghS3_DMvOJb7eYy0pfKQx1QrxStIp44/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXNrcHl0aG9uLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/My8wNi9weXRob24t/c2NyaXB0LWZyb20t/dGVybWluYWwtMTAy/NHg2NTUucG5n" class="img-fluid" alt="terminal">
+    </article>
+    <article class="border col-12 col-lg-6 my-5">
+     <ol>
+      <li> 
+      <h5>Create an account</h5>
+     <p> Sign up with GitHub or your email. </p>
+    </li>
+     <li>
+      <h5>Import your project</h5>
+     <p> Select your existing Git repositories with a 1-click interface </p>
+     </li>
+     <li>
+      <h5>Add YAML config</h5>
+     <p>Copy this example, it probably does what you want 😉 </p>
+     </li>
+     <li>
+      <h5>Your docs build on every commit</h5>
+     <p>Like magic. </p>
+     </li>
+    </ol>
+    </article>
+  </section>
+ </div>
+ 
+ <div class="container">
+  <section class="row">
+    <article class="border col-12 col-lg-4">
+      <a href="#">
+      <img src=https://about.readthedocs.com/images/flask-logo.png class="img-fluid" alt="">
+      <h4>
+        Flask
+      </h4>
+      <p>Flask is a Python web framework built with a small core and easy-to-extend philosohphy.</p>
+    </a>
+    </article>
+
+    <article class="border col-12 col-lg-4">
+      <a href="">
+        <img src=https://about.readthedocs.com/images/jupyter-logo.png class="img-fluid alt="">
+        <h4>
+          Jupyter
+        </h4>
+        <p>
+          Jupyter Notebook is a web-based interactive computational environment for creating notebook documents.
         </p>
-      </div>
-      <div class="col-lg-5 col-md-5 m-3">
-        <img src="./assets/homelander.webp" alt="Grafiti de homelander" class="img-fluid">
-      </div>
-    </div>
-  </div>
-  
- <br><br><br><br><br><br><br>
+      </a>
+    </article>
+    <article class="border col-12 col-lg-4">
+      <a href="#">
+        <img src="https://about.readthedocs.com/images/godot-logo.png" class="img-fluid" alt="">
+        <h4>
+          Godot Engine
+        </h4>
+        <p>
+          Godot Engine is a free and open source community-driven 2D and 3D game engine.
+         </p>
+      </a>
+    </article>
+  </section>
+ </div>
 
- <div class="container-xxl mt-4">
-  <div class="row d-flex justify-content-between align-items-start">
-    <!-- Info Importante -->
-    <div class="col-lg-5 text-start p-3 border bg-light-subtle text-dark" id="info">
-      <h2>Información Importante</h2>
-      <ul>
-        <li>Género(s): Acción, Drama, Ciencia Ficción, Comedia negra, Superhéroes, Sátira</li>  
-        <li>Nombre de los creadores: Garth Ennis y Darick Robertson (cómic), Eric Kripke (adaptación para TV)</li>
-      </ul>
-    </div>
-
-    <!-- Sinopsis -->
-    <div class="col-lg-5 text-start p-3 border bg-info text-success" id="sin">
-      <h3>Sinopsis</h3>
-      <p>
-        *The Boys* está ambientada en un mundo donde los superhéroes son vistos como celebridades y figuras de poder, pero muchos de ellos son corruptos y abusivos. La serie sigue a un grupo de vigilantes conocidos como "The Boys", quienes buscan desenmascarar a estos superhéroes y exponer la verdad detrás de sus abusos. El equipo se enfrenta a "Los Siete", un grupo élite de superhéroes que trabaja para la corporación Vought International, cuyo objetivo es explotar los superpoderes para obtener beneficios económicos y políticos.
+</main>
+<footer>
+  <div class="container-fluid" style="background-color: #252a31;">
+    <div class="container text-white py-4">
+      <section class="row">
+        <article class="col-12 col-lg-3">
+      <h6>
+        STAY UPDATED
+      </h6>
+      <p>Blog</p>
+      <p>Newsletter</p>
+      <p>Status</p>
+      <p><p>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+          </svg>
+          &nbsp; 
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+          </svg> 
+        </span>
       </p>
-    </div>
-  </div>
+    </article>
+    <article class="col-12 col-lg-3">
+      <h6>LEARN MORE</h6>
+      <p>Documentation</p>
+      <p>Getting started guide</p>
+      <p>Configure your project</p>
+      <p>Comparison to GitHub Pages</p>
+      <p>Comparison to GitBook</p>
+      <p>Comparison to Cloudflare Pages</p>
+    </article>
+    <article class="col-12 col-lg-3">
+      <h6>
+        PRODUCT
+      </h6>
+      <p>Features</p>
+      <p>Pricing</p>
+      <p>Privacy Policy</p>
+      <p>Terms of Service</p>
+    </article>
+    <article class="col-12 col-lg-3">
+      <h6>
+        COMPANY
+      </h6>
+      <p>About us</p>
+      <p>Support</p>
+      <p>Advertise With Us</p>
+      <p>Contribute</p>
+    </article>
+  </section>
 </div>
+  
+</footer>
+  </body>
 
-
-<br><br><br><br><br><br><br>
-
-<div class="container-xxl mt-4 p-3 text-center border border-warning" id="temp">
-  <div class="row">
-    <div class="col-lg-6 col-md-8 ms-0 p-3 text-center bg-dark border border-secondary">
-      <h4>Temporadas y Capítulos</h4>
-      <ol>
-        <li>Temporada 1 (2019) - 8 episodios</li>
-        <li>Temporada 2 (2020) - 8 episodios</li>
-        <li>Temporada 3 (2022) - 8 episodios</li>
-      </ol>
-    </div>
-    <div class="col-lg-5 col-md-6 ms-auto">
-      <img src="./assets/poster 2.jpg" alt="Imagen Original Homelander" class="img-fluid">
-    </div>   
-  </div>
-</div>
-
-
-<br><br><br><br><br><br><br>
-
-<div class="container-sm" id="tabla">
-<h3 style="text-align: center;">Personajes</h3>
-
-<br>
-<br>
-<br/>
-<br>
-<br/>
-<br>
-<table border="1">
-  <tr>
-    <th class="bg_gris">Nombre</th>
-    <th class="bg_gris">Foto</th>
-    <th class="bg_gris">Descripción</th>
-  </tr>
-  <tr>
-    <td class="bg_gris_metalico">Homelander</td>
-    <td><img src="./assets/Homelander1.webp" alt="Homelander" width="100"></td>
-    <td class="bg_azul_oscuro">Homelander es el líder de "Los Siete" y el superhéroe más poderoso del mundo. Aunque públicamente es visto como un salvador, es un sociópata narcisista, cruel y violento.</td>
-  </tr>
-  <tr>
-    <td class="bg_gris_metalico">Hughie Campbell</td>
-    <td><img src="assets/hughie.webp" alt="Hughie Campbell" width="100"></td>
-    <td class="bg_azul_oscuro">Hughie es un joven que se une a "The Boys" tras la trágica muerte de su novia a manos de un superhéroe. A pesar de ser el más inexperto del grupo, es un personaje clave por su crecimiento personal.</td>
-  </tr>
-  <tr>
-    <td class="bg_gris_metalico">Billy Butcher</td>
-    <td><img src="assets/butcher.webp" alt="Billy Butcher" width="100"></td>
-    <td class="bg_azul_oscuro">Billy Butcher es el líder de "The Boys". Tiene un odio profundo hacia los superhéroes, especialmente Homelander, a quien culpa de la desaparición de su esposa.</td>
-  </tr>
-  <tr>
-    <td class="bg_gris_metalico">Starlight (Annie January)</td>
-    <td><img src="./assets/starlight.webp" alt="Starlight" width="100"></td>
-    <td class="bg_azul_oscuro">Starlight es una joven superhéroe que se une a "Los Siete". Aunque comienza como idealista, descubre rápidamente la corrupción dentro del grupo y lucha por mantener su moral.</td>
-  </tr>
-  <tr>
-    <td class="bg_gris_metalico">Frenchie</td>
-    <td><img src="./assets/frenchie.webp" alt="Frenchie" width="100"></td>
-    <td class="bg_azul_oscuro">Frenchie es un miembro de "The Boys" con habilidades en armas y explosivos. Tiene un pasado oscuro, pero es leal a su equipo y muestra empatía por los que sufren.</td>
-  </tr>
-  <tr>
-    <td class="bg_gris_metalico">Kimiko</td>
-    <td><img src="./assets/kimiko.webp" alt="Kimiko" width="100"></td>
-    <td class="bg_azul_oscuro">Kimiko es una miembro de "The Boys" con habilidades sobrehumanas. Aunque es inicialmente una asesina silenciosa, tiene un lado sensible y está en busca de redención tras su traumático pasado.</td>
-  </tr>
-  </tr>
-</table>
-</div>
-<br><br><br><br><br><br><br>
-<div class="w-25 ms-4 " id="red">
-<h4> Redes sociales  </h4>
-<div class="mt-4">
-<ul>
-  <li ><a href="https://www.sonypictures.com/tv/theboys" target="_blank">Sitio Oficial</a></li>
-  <li ><a href="https://x.com/voughtintl" target="_blank">X de Vought</a></li>
-  <li ><a href="https://www.instagram.com/voughtintl/" target="_blank">Instagram de Vought</a></li>
-  <li ><a href="https://www.amazon.com/salp/vought?hhf" target="_blank">Sitio oficial de Vought</a></li>
-</ul>
-</div>
-</div >
-<br><br><br><br><br><br><br><br><br><br>
-<div class="container-flex bg-dark  d-flex justify-content-center align-items-center p-5 border border-light" id="cap">
-  <iframe class="border border-danger"  width="560" height="315" src="https://www.youtube.com/embed/li2WDMgHxD0?si=bAP3t2v01XJW49X8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-<br><br><br><br><br><br><br><br><br><br>
-</body>
 </html>
-
